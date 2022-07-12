@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class News extends Component {
 
   render() {
-      let {title, description, imageUrl}= this.props;
+      let {title, description, imageUrl, newsUrl}= this.props;
     return (
         <>
             <div className="card col-md-4 mb-5">
@@ -12,7 +12,7 @@ export default class News extends Component {
                     <h5 className="card-title">{title}</h5>
                     <p></p>
                     <p className="card-text">{description}</p>
-                    <a href="/" className="btn btn-primary">Go somewhere</a>
+                    <a href={newsUrl} className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
